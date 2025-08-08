@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+    <title>Secret Keeper 3000</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f0f0f0;
+            padding: 30px;
+        }
+        form {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            max-width: 500px;
+            margin: auto;
+        }
+        input, textarea {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+        }
+    </style>
+ </head>
+ <body>
+ 🤐    <h2 align="center"> Secret Keeper 3000</h2>
+    <form method="POST">
+        <label>What's the secret?</label>
+        <textarea name="secret" required></textarea>
+        <label>Who is this secret from? (you/someone else)</label>
+        <input type="text" name="secret_from" required>
+        <label>Send this secret to (email)</label>
+        <input type="email" name="to_email" required>
+        <label>Who should NOT know this? (comma-separated)</label>
+        <input type="text" name="forbidden_people" required>
+ ✉        <button type="submit">Send Secret </button>
+    </form>
+ </body>
+ </html>
